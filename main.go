@@ -164,7 +164,7 @@ func main() {
 		wg.Add(1)
 		go func(page string) {
 			defer wg.Done()
-			html, err := fetchHtml(url)
+			html, err := fetchHtml(page)
 			if err != nil {
 				log.Fatal("Error: ", err)
 			}
