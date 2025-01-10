@@ -169,7 +169,7 @@ func main() {
 				log.Fatal("Error: ", err)
 			}
 			htmlContents = append(htmlContents, html)
-			fmt.Printf("--INFO: Finish parse %v\n", url)
+			fmt.Printf("--INFO: Finish parse %v\n", page)
 			fmt.Println("----------------------------------")
 		}(url)
 	}
